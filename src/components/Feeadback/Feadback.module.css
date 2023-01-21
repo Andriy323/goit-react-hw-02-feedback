@@ -1,0 +1,12 @@
+.btn {
+
+   
+        width: 70px;
+    height: 40px;
+    border: solid 2px gold;
+    border-radius: 4px;
+    color: gold;
+    background-color: rgb(43, 32, 53);
+/* margin-right: 10px; */
+cursor: pointer;
+}

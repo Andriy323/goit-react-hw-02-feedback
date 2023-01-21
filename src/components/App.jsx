@@ -40,7 +40,8 @@ export default class App extends Component {
   render() {
     const { good, bad, neutral } = this.state;
     return (
-      <div>
+      <div
+     >
         <FeedbackOptions
           options={this.nameBtn}
           onLeaveFeedback={this.onLeaveFeedback}
