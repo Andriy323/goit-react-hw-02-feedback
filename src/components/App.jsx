@@ -14,6 +14,8 @@ export default class App extends Component {
   };
 
   
+
+
   nameBtn = ['good', 'neutral', 'bad'];
   onLeaveFeedback = name => {
     this.setState(prevState => {
