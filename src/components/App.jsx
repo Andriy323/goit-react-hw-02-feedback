@@ -3,6 +3,9 @@ import React, { Component } from 'react';
 import Statistics from 'components/Statistic/Statistic';
 import Section from './Section/Section';
 import FeedbackOptions from 'components/Feeadback/Feedback';
+
+import css  from "./App.module.css";
+
 export default class App extends Component {
   static defaultProps = {};
 
@@ -38,7 +41,7 @@ export default class App extends Component {
   render() {
     const { good, bad, neutral } = this.state;
     return (
-      <>
+      <div className={css.container}>
         <Section title="Pleas leave feedback">
           <FeedbackOptions
             options={this.nameBtn}
@@ -55,7 +58,7 @@ export default class App extends Component {
             positivePercentage={this.countPositiveFeedbackPercentage()}
           />
         </Section>
-      </>
+      </div>
     );
   }
 }
